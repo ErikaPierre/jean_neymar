@@ -1,0 +1,134 @@
+@import url("https://fonts.googleapis.com/css2?family=Alata&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,500&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Alata", sans-serif;
+  background-color: rgb(240, 238, 235);
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 100vh;
+  overflow-x: auto;
+  overflow-y: scroll;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+li {
+  list-style: none;
+}
+
+li:hover {
+  background-color: #f0eeeb;
+  color: black;
+  padding-left: 1.4em;
+  transition: all 0.3s;
+}
+
+.author {
+  font-size: 30px;
+  color: rgb(240, 238, 235);
+  text-align: center;
+  padding: 25px;
+}
+
+.sidebar {
+  width: 280px;
+  background-color: rgb(63, 54, 40);
+  color: white;
+}
+
+.flex-shrink-0 {
+  flex-shrink: 0 !important;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 32px;
+  overflow-y: scroll;
+}
+
+.list-group {
+  text-decoration: none;
+  color: rgb(240, 238, 235);
+  padding: 20px;
+  font-size: 1.25em;
+}
+
+/* Accueil */
+
+.div_accueil h1 {
+  margin: 0 0 64px;
+}
+
+.div_accueil p {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 20px;
+  font-style: italic;
+  margin: 40px 30.5px 0;
+}
+
+.div_accueil_book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.div_accueil_book_img {
+  width: 192px;
+  height: 302px;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+}
+
+.div_accueil_book_img:hover {
+  z-index: 1;
+  transition: background-color 0.5s ease-in-out;
+  background-color: rgb(81, 81, 88);
+}
+
+/* Propos*/
+
+.div_apropos_picture {
+  max-width: 600px;
+}
+
+.div_apropos h1 {
+  margin: 64px 0;
+  font-size: 32px;
+}
+
+.div_apropos p {
+  font-size: 20px;
+}
+
+/* Oeuvres */
+
+.div_oeuvres h1 {
+  margin: 0 0 64px;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 192px);
+  justify-content: space-around;
+  align-items: center;
+}
+
+.div_book img {
+  max-width: 100%;
+  object-fit: cover;
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.75);
+}
+
+.div_book h1 {
+  font-size: 24px;
+  text-align: center;
+}
